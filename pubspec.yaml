@@ -12,13 +12,15 @@ topics:
   - dash
   
 environment:
-  sdk: '>=3.0.0 <4.0.0'
-
+  sdk: '>=3.0.0'
 
 dependencies:
   convert: ^3.1.1
-  pointycastle: ^3.7.4
-  bip32: ^2.0.0
+  pointycastle: ^4.0.0
+  bip32:
+    git:
+      url: https://github.com/unusnullus/bip32-dart
+      ref: master
   blockchain_utils:
     git:
       url: https://github.com/cake-tech/blockchain_utils
